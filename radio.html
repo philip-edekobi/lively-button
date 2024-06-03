@@ -10,11 +10,20 @@
 <style>
   body {
     margin: 0;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  video {
+    margin: 5rem auto;
   }
 </style>
 
 <body>
-  <video id="vid"></video>
+  <video id="vid" width="520" src="/rkk.mp4" playsinline></video>
+  <canvas id="canv" height="20%"></canvas>
   <script type="module" src="/main.js"></script>
 </body>
 
